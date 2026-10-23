@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Evaluación de comprensión sobre inteligencia de negocios en microempresas.">
+  <title>Evaluación | Inteligencia de negocios en microempresas</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="quiz.js" defer></script>
+</head>
+<body class="quiz-page">
+  <a class="skip-link" href="#quiz-content">Saltar a la evaluación</a>
+  <header class="site-header quiz-header">
+    <div class="header-inner">
+      <a class="wordmark" href="index.html" aria-label="Volver al artículo">BI<span>·</span>Micro</a>
+      <a class="back-link" href="index.html">← Artículo</a>
+      <div id="timer-panel" class="timer-panel" role="timer" aria-live="off" aria-label="Tiempo restante: 10 minutos"><span class="timer-label">TIEMPO RESTANTE</span><strong id="timer">10:00</strong></div>
+    </div>
+  </header>
+  <main id="quiz-content" class="quiz-main">
+    <div class="quiz-heading">
+      <div><p class="section-kicker">EVALUACIÓN DE COMPRENSIÓN</p><h1>Inteligencia de negocios en microempresas</h1><p>10 preguntas de opción múltiple</p></div>
+    </div>
+
+    <section id="already-completed" class="notice-panel" hidden aria-labelledby="completed-title">
+      <span class="notice-icon" aria-hidden="true">✓</span><div><p class="section-kicker">INTENTO REGISTRADO</p><h2 id="completed-title">Ya realizaste la evaluación</h2><p>Tu puntuación guardada es <strong id="saved-score">0/10</strong>. No se permiten nuevos intentos en este navegador.</p><a class="button button-secondary" href="index.html">Volver al artículo</a></div>
+    </section>
+
+    <form id="quiz-form" class="quiz-form" autocomplete="off">
+      <div class="quiz-progress-row"><span id="progress-text">0 de 10 respondidas</span><span>Selecciona una respuesta por pregunta</span></div>
+      <div class="progress-track" role="progressbar" aria-label="Progreso de respuestas" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0"><span id="progress-fill"></span></div>
+      <div id="questions" class="questions-list"></div>
+      <div class="submit-row"><p>El envío es definitivo y no podrás volver a intentarlo.</p><button class="button button-primary" type="submit">Finalizar evaluación <span aria-hidden="true">→</span></button></div>
+    </form>
+
+    <section id="results" class="results-panel" hidden aria-live="polite" aria-labelledby="results-title">
+      <div class="results-summary"><p class="section-kicker">RESULTADO FINAL</p><h2 id="results-title">Evaluación completada</h2><p id="result-message" class="result-message"></p><div class="score-display"><strong id="final-score">0/10</strong><span>respuestas correctas</span></div></div>
+      <h3 class="review-heading">Revisión de respuestas</h3>
+      <ol id="answer-review" class="answer-review"></ol>
+      <a class="button button-secondary" href="index.html">Volver al artículo</a>
+    </section>
+  </main>
+  <footer class="site-footer quiz-footer"><div><span class="wordmark">BI<span>·</span>Micro</span><p>Evaluación sobre el artículo académico · 2022</p></div><span>ISSN 2602-8255</span></footer>
+</body>
+</html>
